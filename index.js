@@ -1,27 +1,19 @@
+// Global scope
+const burgers = ['Hamburger', 'Cheeseburger'];
+let featuredDrink = 'Strawberry Milkshake';
 
-let burgers = ["Hamburger", "Cheeseburger"];
-let featuredDrink = "Strawberry Milkshake";
-
-
+// Function
 function addBurger() {
-    let newBurger = "Flatburger";
+    const newBurger = 'Flatburger'; // function-scoped
     burgers.push(newBurger);
 
     if (true) {
-        let anotherNewBurger = "Maple Bacon Burger";
+        const anotherNewBurger = 'Maple Bacon Burger'; // block-scoped
         burgers.push(anotherNewBurger);
     }
-
-    console.log(burgers);
 }
 
-
+// Function to change drink
 function changeFeaturedDrink() {
-    featuredDrink = "The JavaShake";
+    featuredDrink = 'The JavaShake';
 }
-
-
-addBurger();
-changeFeaturedDrink();
-
-console.log(featuredDrink);
