@@ -1,21 +1,27 @@
-let burgers = [ "Hamburgers", "Cheeseburger"]
-let featuredDrink = "StrawberryMilkshake"
+
+let burgers = ["Hamburger", "Cheeseburger"];
+let featuredDrink = "Strawberry Milkshake";
+
 
 function addBurger() {
-  var newBurger = 'Flatburger';
+    let newBurger = "Flatburger";
+    burgers.push(newBurger);
 
-  burgers.push(newBurger);
+    if (true) {
+        let anotherNewBurger = "Maple Bacon Burger";
+        burgers.push(anotherNewBurger);
+    }
+
+    console.log(burgers);
 }
 
-if (true) {
-    let anotherNewBurger = "MapleBaconBurger"
-    burgers.push(anotherNewBurger)
-    
-}
 
 function changeFeaturedDrink() {
-  featuredDrink = "JavaShake"
+    featuredDrink = "The JavaShake";
 }
 
-console.log (burgers)
-console.log (featuredDrink)
+
+addBurger();
+changeFeaturedDrink();
+
+console.log(featuredDrink);
