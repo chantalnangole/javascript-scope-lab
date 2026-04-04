@@ -4,11 +4,11 @@ let featuredDrink = 'Strawberry Milkshake';
 
 // Function
 function addBurger() {
-    const newBurger = 'Flatburger'; // function-scoped
+    const newBurger = 'Flatburger';
     burgers.push(newBurger);
 
-    if (true) {
-        const anotherNewBurger = 'Maple Bacon Burger'; // block-scoped
+    if(true){
+        const anotherNewBurger = 'Maple Bacon Burger';
         burgers.push(anotherNewBurger);
     }
 }
@@ -17,3 +17,4 @@ function addBurger() {
 function changeFeaturedDrink() {
     featuredDrink = 'The JavaShake';
 }
+
